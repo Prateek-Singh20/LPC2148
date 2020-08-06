@@ -10,7 +10,7 @@ int main(void)
 		}
 	  if (!k)                    //checking if button is pressed or not
     {
-			IO0DIR |=(1<<11);
+			IO0DIR |=(1<<11); //initializing Pin P0.11 as output
 		  IO0SET = (1<<11);        // Turning LED on
                  }
      else
