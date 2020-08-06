@@ -10,19 +10,19 @@ int main(void)
 	while(1)
 	{
 		
-		IO0CLR = (1<<10);	// Turning LED on for pin P0.10
+		IO0CLR = (1<<10);	// Turning LED off for pin P0.10
 		for(de=0;de<90000;de++);
-		IO0SET = (1<<10);	// Turning LED off for pin P0.10
-		for(de=0;de<90000;de++);
-		
-		IO0CLR = (1<<11);	// Turning LED on for pin P0.11
-		for(de=0;de<90000;de++);
-		IO0SET = (1<<11);	// Turning LED off for pin P0.10
+		IO0SET = (1<<10);	// Turning LED on for pin P0.10
 		for(de=0;de<90000;de++);
 		
-		IO0CLR = (1<<12);	// Turning LED on for pin P0.12
+		IO0CLR = (1<<11);	// Turning LED off for pin P0.11
 		for(de=0;de<90000;de++);
-		IO0SET = (1<<12);	// Turning LED off for pin P0.10
+		IO0SET = (1<<11);	// Turning LED on for pin P0.10
+		for(de=0;de<90000;de++);
+		
+		IO0CLR = (1<<12);	// Turning LED off for pin P0.12
+		for(de=0;de<90000;de++);
+		IO0SET = (1<<12);	// Turning LED on for pin P0.10
 		for(de=0;de<90000;de++);
 	}
 }
