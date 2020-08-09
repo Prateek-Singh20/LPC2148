@@ -1,0 +1,4 @@
+--cpu ARM7TDMI "startup.o" "bliii2.o" --strict --scatter "blink2.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\blink2.map" -o blink2.axf
