@@ -1,0 +1,17 @@
+#include<LPC214x.h>
+
+int main()
+{
+	PINSEL0=0x8006;
+	PWMPCR=0x600;
+	PWMMR0=600000;
+	PWMTCR=0x09;
+	PWMMCR=0x02;
+	
+  while(1)
+	{
+		PWMMR1=95000;
+		PWMMR2=67500000;
+		PWMLER=0x6;
+	}
+}
